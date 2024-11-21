@@ -8,7 +8,7 @@ return {
     priority = 1000,
     config = function()
       -- Example config in lua
-      vim.g.nord_contrast = true -- Make sidebars and popup menus like nvim-tree and telescope have a different background
+      vim.g.nord_contrast = false -- Make sidebars and popup menus like nvim-tree and telescope have a different background
       vim.g.nord_borders = false -- Enable the border between verticaly split windows visable
       vim.g.nord_disable_background = false -- Disable the setting of background color so that NeoVim can use your terminal background
       vim.g.set_cursorline_transparent = true -- Set the cursorline transparent/visible
@@ -18,7 +18,13 @@ return {
       vim.g.nord_bold = false -- enables/disables bold
 
       -- Load the colorscheme
-      require('nord').set()
+      -- require('nord').set()
+    end,
+  },
+  {
+    'loctvl842/monokai-pro.nvim',
+    config = function()
+      --  require('monokai-pro').setup()
     end,
   },
 }

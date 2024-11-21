@@ -49,6 +49,7 @@ return {
       kanagawa = 'kanagawa',
       catppuccin = 'catppuccin',
       dracula = 'dracula',
+      monokai = 'monokai-pro',
     }
 
     local mode = {
